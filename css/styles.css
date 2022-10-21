@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+/** font-family: 'Fira Sans Condensed', sans-serif; **/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Imagen de fondo para la web **/
+
+html {
+    background-image: url(../assets/surface.jpg);
+}
+
+/** Estilos para el nombre de página **/
+
+h1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 50px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.991);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    
+
+}
+
+/** Estilos Barra de Navegación**/
+
+.menu {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 15px;
+    gap: 50px;
+    background: #887d8d; width: 50%;
+    border: 5px solid rgba(40, 40, 42, 0.4);
+    border-radius: 50px;
+
+}
+
+.menu a {
+    text-decoration: none;
+
+}
+
+.conteiner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteiner .menu a {
+    width: 100%;
+}
+
+/** Estilos para la foto galería con enlaces a sus respectivas secciones**/
+
+.conteinerGrid {
+
+    display: grid;
+    width: 100vh;
+    margin-top: 35px;
+    grid-template-columns: repeat (3, 800px);
+    grid-template-rows: repeat (6, 500px);
+    grid-template-areas: 
+    "post1 post2 post3"
+    "post1 post2 post3"
+    "post1 post2 post3"
+    "post4 post5 post6"
+    "post4 post5 post6"
+    "post4 post5 post6"
+
+
+    ;
+    
+
+    
+
+}
+
+
+.post1 {
+    grid-area: post1;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+}
+
+.post1 img {
+    width: 800px;
+}
+
+
+
+.post2 {
+    grid-area: post2;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+
+}
+
+.post2 img {
+    width: 800px;
+    height: 533.33px;
+
+}
+
+
+.post3 {
+    grid-area: post3;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+}
+
+.post3 img {
+    width: 800px;
+}
+
+
+
+.post4 {
+    grid-area: post4;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+}
+
+.post4 img {
+    width: 800px;
+
+}
+
+
+
+.post5 {
+    grid-area: post5;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+
+}
+
+.post5 img {
+    width: 800px;
+    
+
+}
+
+
+.post6 {
+    grid-area: post6;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+
+
+}
+
+.post6 img {
+    width: 800px;
+    
+}
+
+
+/** Estilos del Footer **/
+
+footer {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    background-color: #22333b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Estilos Acerca de RDM**/
+
+.contenedorQs {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 25px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 80px;
+}
+
+.ejemLor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.ejemLor p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 25px;
+    background-color: white;
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    padding: 30px;
+
+}
+
+/** Responsive para Mobile **/
+
+/** Página de Inicio **/
+
+@media (max-width: 576px) {
+    
+    .conteinerGrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6.1fr);
+        grid-template-areas:
+        "post1"
+        "post2"
+        "post3"
+        "post4"
+        "post5"
+        "post6"
+
+    }
+
+/** Reacomodamiento título **/
+
+    h1 {
+        display: flex;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+/** Reacomodamiento barra de navegación**/
+
+    .conteiner {
+        display: flex;
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+
+/** Reacomodamiento estilos de las imágenes de la galería **/
+
+.post1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Pagina de Contacto **/
+
+
+.contenedorQs {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 10px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 15px;
+}
+
+
+.ejemLor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.ejemLor p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+/** Reacomodamiento de los estilos del Footer**/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22333b;
+    width: 100vh
+
+}
+
+}
